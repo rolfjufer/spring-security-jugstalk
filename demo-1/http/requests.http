@@ -1,0 +1,25 @@
+### Get courses
+GET http://localhost:8080/api/v1/courses
+Accept: application/json
+
+
+### Create course
+POST http://localhost:8080/api/v1/courses
+Authorization: Basic admin password
+Content-Type: application/json
+
+{
+  "id": 5,
+  "title": "Microservices with Spring Boot",
+  "description": "Nowadays, enterprise applications are increasingly built on a microservice architecture. The Spring Ecosystem with Spring Boot, Spring Data, Spring MVC etc. has established itself as the dominant Java development framework for building microservice-based enterprise applications. This allows projects to be realized much faster and maintained better than with traditional monolithic approaches and frameworks.",
+  "city": "Zurich",
+  "startDate": "26.11.2024",
+  "endDate": "28.11.2024",
+  "durationInDays": 3,
+  "price": 2430.00,
+  "trainerId": 1
+}
+
+### Delete course
+DELETE http://localhost:8080/api/v1/courses/3
+Content-Type: application/json
