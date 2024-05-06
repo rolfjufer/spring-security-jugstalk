@@ -16,8 +16,10 @@
 	<modules>
 		<module>demo-1</module>
 		<module>demo-2</module>
-		<module>demo-3</module>
-	</modules>
+		<module>demo-3-a</module>
+		<module>demo-4</module>
+		<module>demo-3-b</module>
+    </modules>
 
 
 

@@ -39,3 +39,4 @@ target/
 .DS_Store
 
 /docker/*.txt
+/AuthorizationServer/

@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: demo-3-a
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:8081/realms/jugstalk
+          jwk-set-uri: http://localhost:8081/realms/jugstalk/protocol/openid-connect/certs
+
+logging.level:
+  org.springframework.cloud.gateway: DEBUG
+  org.springframework.security: DEBUG
+  org.springframework.web.reactive.function.client: TRACE
+
+server.port: 8080
